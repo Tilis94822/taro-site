@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia - Leituras e Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="starry-background">
+        
+        <header class="main-header">
+            <div class="logo">Mia</div>
+            <nav class="nav-container">
+                <ul>
+                    <li><a href="#inicio" class="active">página inicial</a></li>
+                    <li><a href="#agendamento">agendamento</a></li>
+                    <li><a href="#duvidas">dúvidas</a></li>
+                    <li><a href="#avaliacoes">avaliações</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            
+            <section id="inicio" class="section-container">
+                
+                <article class="content-block">
+                    <h2>Sobre as leituras</h2>
+                    <div class="cards-grid">
+                        <div class="card-placeholder">O Baralho Cigano é uma ferramenta de orientação e autoconhecimento que, por meio de suas cartas e simbologias, nos convida a refletir sobre diferentes situações da vida.
+                          <br>Obs: As leituras Baralho Cigano têm caráter espiritual e reflexivo não substituindo orientações médicas, psicológicas, jurídicas ou financeiras.<span class="star-icon"></span></div>
+                        
+                    </div>
+                </article>
+
+                <article class="content-block">
+                    <h2>Opções de tiragens</h2>
+                    <div class="options-container">
+                        <div class="option-box">1 pergunta: R$1,00<span class="star-icon"></span></div>
+                        <div class="option-box">3 perguntas: R$2,00<span class="star-icon"></span></div>
+                        <div class="option-box">5 perguntas: R$3,50<span class="star-icon"></span></div>
+                        <div class="option-box">Templo de Afrodite: R$10,00<span class="star-icon"></span></div>
+                        <div class="option-box">Templo do Diabo: R$12,00<span class="star-icon">✧</span></div>
+                        <div class="option-box">Tiragem mensal: R$20,00<span class="star-icon">✧</span></div>
+                    </div>
+                </article>
+
+                <article class="content-block text-block">
+                    <h2>Sobre mim</h2>
+                    <div class="text-placeholder">Prazer, sou Mia! <br> Seja muito bem-vindo(a) ao meu cantinho!<br> Sou apaixonada pelo universo da Baralho Cigano e pela beleza de suas cartas, símbolos e significados.<br> Estou iniciando minha jornada nesse caminho especial com muito carinho, dedicação e vontade de compartilhar o conhecimento que venho desenvolvendo.</div>
+                </article>
+
+                <article class="content-block text-block">
+                    <h2>Como agendar</h2>
+                    <div class="text-placeholder">Selecione o atendimento, horário e dia desejados. Preencha abaixo o seu número de contato e clique em enviar.</div>
+                </article>
+
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="agendamento" class="section-container form-section">
+                <h2>Agendamento</h2>
+                
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label>Atendimento desejado</label>
+                        <div class="radio-grid">
+                            <label class="radio-option"><input type="radio" name="atendimento" value="1 pergunta"> 1 pergunta</label>
+                            <label class="radio-option"><input type="radio" name="atendimento" value="3 perguntas"> 3 perguntas</label>
+                            <label class="radio-option"><input type="radio" name="atendimento" value="5 perguntas"> 5 perguntas</label>
+                            <label class="radio-option"><input type="radio" name="atendimento" value="Templo de Afrodite"> Templo de Afrodite</label>
+                            <label class="radio-option"><input type="radio" name="atendimento" value="Templo do Diabo"> Templo do Diabo</label>
+                            <label class="radio-option"><input type="radio" name="atendimento" value="Tiragem Mensal"> Tiragem Mensal</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="horario">Horário</label>
+                            <input type="time" id="horario" name="horario" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="data">Data</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contato">Número de contato</label>
+                        <input type="tel" id="contato" name="contato" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="duvidas" class="section-container">
+                <h2>Dúvidas</h2>
+                <div class="faq-container">
+                    <div class="faq-item">Como funciona uma consulta de Baralho Cigano?
+                        <div class="text-placeholder">A consulta é realizado de maneira individual. Você escolhe a tiragem desejada, envia sua solicitação de agendamento e, após minha aprovação, rexeba as orientações para realizar sua consulta.</div>
+                    </div>
+                    <div class="faq-item">Como funcipna a pagamento?
+                        <div class="text-placeholder">Após a aprovação do seu horário, você recebera as instruções pars realizar o pagamento e confirmar sua consulta.</div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="avaliacoes" class="section-container">
+                <h2>Avaliações</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars"><span class="star-icon">✦✦✦✦✦</span></div>
+                        <div class="text-placeholder"></div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars"><span class="star-icon">✦✦✦✦✦</span></div>
+                        <div class="text-placeholder"></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const atendimentoSel = document.querySelector('input[name="atendimento"]:checked');
+        const horario = document.getElementById('horario').value;
+        const data = document.getElementById('data').value;
+        const contato = document.getElementById('contato').value;
+
+        if (!atendimentoSel || !horario || !data || !contato) {
+            alert('Por favor, preencha todos os campos!');
+            return;
+        }
+
+        // Formata a data de AAAA-MM-DD para DD/MM/AAAA
+        const dataFormatada = data.split('-').reverse().join('/');
+        
+        // COLOQUE SEU NÚMERO AQUI (DDD + número, apenas dígitos):
+        const meuNumero = '5512987018013';
+
+        const mensagem = `Olá! Gostaria de agendar uma consulta:\n` +
+                         `• *Atendimento:* ${atendimentoSel.value}\n` +
+                         `• *Data:* ${dataFormatada}\n` +
+                         `• *Horário:* ${horario}\n` +
+                         `• *Contato do cliente:* ${contato}`;
+
+        const urlWhatsApp = `https://wa.me/${meuNumero}?text=${encodeURIComponent(mensagem)}`;
+        window.open(urlWhatsApp, '_blank');
+    });
+    </script>
+
+</body>
+</html>

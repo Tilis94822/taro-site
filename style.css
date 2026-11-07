@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a050b;
+    color: #ffffff;
+}
+
+.starry-background {
+    position: relative;
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #360d17 0%, #1a050b 100%);
+    overflow: hidden;
+}
+
+.starry-background::before {
+    content: "✦   ✧     ✦     ✧   ✦   ✧     ✦   ✧  ✧     ✦   ✧     ✦     ✧   ✦     ✧\n\n✦     ✧   ✦     ✧   ✦     ✧   ✦   ✧";
+    white-space: pre-wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    color: #ff3b3b;
+    opacity: 0.5;
+    letter-spacing: 50px;
+    line-height: 100px;
+    pointer-events: none;
+    text-shadow: 0 0 8px #ff1a1a, 0 0 16px #e60000;
+}
+
+.main-header {
+    background-color: #3b0d19;
+    border-bottom: 2px solid #541324;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-container a {
+    font-family: 'Cinzel', serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3sal;
+}
+
+.nav-container a:hover,
+.nav-container a.active {
+    color: #ffb3b3;
+    border-bottom: 2px solid #ffb3b3;
+}
+
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.section-container {
+    margin-bottom: 60px;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #541324, transparent);
+    margin: 50px 0;
+}
+
+.content-block {
+    margin-bottom: 40px;
+}
+
+.content-block h2, .form-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    position: relative;
+    padding-left: 15px;
+}
+
+.content-block h2::before, .form-section h2::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ff3b3b;
+}
+
+.cards-grid {
+    display: grid ;
+}
+
+.card-placeholder {
+    height: 220px;
+    border: 1.5px solid #541324;
+    background-color: rgba(59, 13, 25, 0.4);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  text-align: justify;
+}
+
+.star-icon {
+    color: #ff3b3b;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.options-container {
+    display: grid;
+    gap: 15px;
+}
+
+.option-box {
+    flex: 1;
+    height: 60px;
+    border: 1.5px solid #541324;
+    background-color: rgba(59, 13, 25, 0.4);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-placeholder {
+    border: 1.5px solid #541324;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: rgba(59, 13, 25, 0.2);
+    min-height: 80px;
+  text-align: justify;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    color: #e0d0d3;
+}
+
+.radio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border: 1.5px solid #541324;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: rgba(59, 13, 25, 0.2);
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #541324;
+    background-color: rgba(59, 13, 25, 0.4);
+    color: #ffffff;
+    border-radius: 6px;
+    font-family: inherit;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff3b3b;
+}
+
+.submit-btn {
+    width: 120px;
+    padding: 10px;
+    background-color: #3b0d19;
+    color: #ffffff;
+    border: 1.5px solid #541324;
+    border-radius: 6px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #541324;
+    border-color: #ff3b3b;
+}
+
+.faq-container, .reviews-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.review-stars {
+    margin-bottom: 8px;
+}
